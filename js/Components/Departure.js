@@ -17,6 +17,9 @@ var calculate_timeleft = function (time, rt) {
         return rt ? 'Nå' : 'ca nå';
       }
       else {
+        if (interval == 3) {
+          interval = "tri";
+        }
         return rt ? interval + ' min' : 'ca ' + interval + ' min';
       }
     }
